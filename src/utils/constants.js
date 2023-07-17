@@ -18,7 +18,7 @@ export const logo = 'https://i.ibb.co/681j21P/youtube-logo-png-2073.png';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon /> },
-  { name: 'Moyosoore. AI', icon: <PaidIcon /> },
+  { name: 'Manchester United', icon: <PaidIcon /> },
   { name: 'Coding', icon: <CodeIcon /> },
   { name: 'ReactJS', icon: <CodeIcon /> },
   { name: 'Music', icon: <MusicNoteIcon /> },
@@ -36,11 +36,10 @@ export const categories = [
   { name: 'Crypto', icon: <DeveloperModeIcon /> },
 ];
 
-export const demoThumbnailUrl =
-  'https://i.ibb.co/rHqGrfK/BECOME-A-MILLIONAIRE-IN-72-HOURS.png';
-export const demoChannelUrl = '/channel/UCmXmlB4-HJytD7wek0Uo97A';
-export const demoVideoUrl = '/video/GDa8kZLNhJ4';
-export const demoChannelTitle = 'Moyosoore. AI';
-export const demoVideoTitle = 'Become a Millionaire in 72 Houts';
+export const demoThumbnailUrl = 'https://i.ibb.co/yQzL7BN/united-thumbnail.png';
+export const demoChannelUrl = '/manutd';
+export const demoVideoUrl = '/video/pxjtMJpHr10';
+export const demoChannelTitle = 'Manchester United';
+export const demoVideoTitle = 'Training Session.';
 export const demoProfilePicture =
-  'https://i.ibb.co/XxQKfDq/Profile-Picture.png';
+  'https://i.ibb.co/WDFjS70/Man-United-Logo.png';
