@@ -1,8 +1,10 @@
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import HomeIcon from '@mui/icons-material/Home';
+import PaidIcon from '@mui/icons-material/Paid';
 import CodeIcon from '@mui/icons-material/Code';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import SchoolIcon from '@mui/icons-material/School';
 import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
@@ -16,14 +18,14 @@ export const logo = 'https://i.ibb.co/681j21P/youtube-logo-png-2073.png';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon /> },
-  { name: 'JS Mastery', icon: <CodeIcon /> },
+  { name: 'Moyosoore. AI', icon: <PaidIcon /> },
   { name: 'Coding', icon: <CodeIcon /> },
   { name: 'ReactJS', icon: <CodeIcon /> },
-  { name: 'NextJS', icon: <CodeIcon /> },
   { name: 'Music', icon: <MusicNoteIcon /> },
   { name: 'Education', icon: <SchoolIcon /> },
   { name: 'Podcast', icon: <GraphicEqIcon /> },
   { name: 'Movie', icon: <OndemandVideoIcon /> },
+  { name: 'Football', icon: <SportsSoccerIcon /> },
   { name: 'Gaming', icon: <SportsEsportsIcon /> },
   { name: 'Live', icon: <LiveTvIcon /> },
   { name: 'Sport', icon: <FitnessCenterIcon /> },
