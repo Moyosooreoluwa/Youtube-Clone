@@ -24,7 +24,7 @@ export const categories = [
   { name: 'Music', icon: <MusicNoteIcon /> },
   { name: 'Education', icon: <SchoolIcon /> },
   { name: 'Podcast', icon: <GraphicEqIcon /> },
-  { name: 'Movie', icon: <OndemandVideoIcon /> },
+  { name: 'Movies', icon: <OndemandVideoIcon /> },
   { name: 'Football', icon: <SportsSoccerIcon /> },
   { name: 'Gaming', icon: <SportsEsportsIcon /> },
   { name: 'Live', icon: <LiveTvIcon /> },
