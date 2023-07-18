@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchFromAPI } from '../utils/fetchFromAPI';
 import { Box } from '@mui/material';
+
+import { fetchFromAPI } from '../utils/fetchFromAPI';
 import ChannelCard from './ChannelCard';
 import Videos from './Videos';
 
 const ChannelInfo = () => {
   const [channelInfo, setChannelInfo] = useState([]);
-  const [videos, setVideos] = useState([]);
+  const [videos, setVideos] = useState(null);
 
   const { id } = useParams();
 
@@ -41,7 +42,7 @@ const ChannelInfo = () => {
         <ChannelCard channelDetail={channelInfo} marginTop="-93px" />
       </Box>
       <Box p={2} display="flex">
-        <Box sx={{ mr: { sm: '100px' } }} />
+        <Box sx={{ mr: { sm: '100px', md: 'auto' } }} />
         <Videos videos={videos} />
       </Box>
     </Box>
@@ -49,6 +50,3 @@ const ChannelInfo = () => {
 };
 
 export default ChannelInfo;
-
-// UCGYYNGmyhZ_kwBF_lqqXdAQ
-// UCMmVPVb0BwSIOWVeDwlPocQ

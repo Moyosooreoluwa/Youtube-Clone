@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
+import { CardContent, CardMedia, Typography, Box } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 import { demoProfilePicture } from '../utils/constants';
@@ -15,7 +15,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          width: { xs: '356px', md: '320px' },
+          width: { md: '300px', xs: '100%', sm: '358px' },
           height: '326px',
           margin: 'auto',
           marginTop,
@@ -51,10 +51,10 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
                 sx={{ fontSize: 12, color: 'grey', ml: '5px' }}
               />
             </Typography>
-            {parseInt(
+            {/* {parseInt(
               channelDetail?.statistics?.subscriberCount
             ).toLocaleString()}{' '}
-            Subscribers
+            Subscribers */}
           </CardContent>
         </Link>
       </Box>

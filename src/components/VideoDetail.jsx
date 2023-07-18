@@ -1,14 +1,17 @@
 import { Box, Stack, Typography } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ReactPlayer from 'react-player';
-import { fetchFromAPI } from '../utils/fetchFromAPI';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+
 import Videos from './Videos';
+import LoadingSpinner from './LoadingSpinner';
+import { fetchFromAPI } from '../utils/fetchFromAPI';
 
 const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null);
   const [videos, setVideos] = useState(null);
+
   const { id } = useParams();
 
   useEffect(() => {
@@ -20,17 +23,33 @@ const VideoDetail = () => {
       (data) => setVideos(data.items)
     );
   }, [id]);
-  if (!videoDetail?.snippet) return 'Loading';
+
+  if (!videoDetail?.snippet) return <LoadingSpinner />;
+
   const {
     snippet: { title, channedlId, channelTitle },
     statistics: { viewCount, likeCount },
   } = videoDetail;
+
   return (
     <>
       <Box minHeight="95vh">
-        <Stack direction={{ xs: 'column', md: 'row' }}>
+        <Stack
+          direction={{ xs: 'column', md: 'row' }}
+          justifyContent={'center'}
+          alignContent={'center'}
+        >
           <Box flex={1}>
-            <Box sx={{ width: '100%', position: 'sticky', top: '86px' }}>
+            <Box
+              justifyContent={'center'}
+              alignContent={'center'}
+              sx={{
+                width: '90%',
+                position: 'relative',
+                top: '86px',
+                paddingLeft: { md: '36px' },
+              }}
+            >
               <ReactPlayer
                 url={`https://www.youtube.com/watch?v=${id}`}
                 className="react-player"
@@ -47,10 +66,7 @@ const VideoDetail = () => {
                 px={2}
               >
                 <Link to={`/channel/${channedlId}`}>
-                  <Typography
-                    variant={{ sm: 'subtitle1', md: 'h6' }}
-                    color={'#fff'}
-                  >
+                  <Typography variant="h6" color={'#fff'}>
                     {channelTitle}
                     <CheckCircleIcon
                       sx={{ fontSize: '12px', color: 'grey', ml: '5px' }}

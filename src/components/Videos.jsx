@@ -2,17 +2,19 @@ import { Stack, Box } from '@mui/material';
 
 import VideoCard from './VideoCard';
 import ChannelCard from './ChannelCard';
+import LoadingSpinner from './LoadingSpinner';
 
 const Videos = ({ videos, direction }) => {
-  if (!videos?.length) return 'Loading';
+  if (!videos?.length) return <LoadingSpinner />;
+
   return (
     <>
       {' '}
       <Stack
         direction={direction || 'row'}
         flexWrap="wrap"
-        justifyContent="start"
-        alignItems="start"
+        justifyContent="center"
+        alignItems="center"
         gap={2}
       >
         {videos.map((item, idx) => (
