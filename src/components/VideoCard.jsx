@@ -22,7 +22,7 @@ const VideoCard = ({
     <>
       <Card
         sx={{
-          width: { md: '320px', xs: '100%' },
+          width: { md: '320px', xs: '356px' },
           boxShadow: 'none',
           borderRadius: 'none',
         }}
