@@ -18,7 +18,7 @@ export const logo = 'https://i.ibb.co/681j21P/youtube-logo-png-2073.png';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon /> },
-  { name: 'Manchester United', icon: <SportsSoccerIcon /> },
+  { name: 'Manchester United F.C.', icon: <SportsSoccerIcon /> },
   { name: 'Coding', icon: <CodeIcon /> },
   { name: 'ReactJS', icon: <CodeIcon /> },
   { name: 'Music', icon: <MusicNoteIcon /> },
